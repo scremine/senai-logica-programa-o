@@ -1,25 +1,36 @@
-// exercício 09
-// 
+// exercício 10
+// Dados três números distintos, exiba-os em ordem crescente
+
+
+
 programa
 {
 	funcao inicio()
 	{
-		
-		real a,b,r // a=quantidade de folhas | b=valor da folha | r=valor a ser cobrado
 
-		escreva("Qual a quantidade de cópias que deseja fazer?\n")
-		leia (a)
+		inteiro a,b,c,r
 
-		se (a<=101){
-			b = 0.20
-		}senao {
-			b = 0.25
+		escreva("Em qual categoria o nadador está: \n")
+		escreva("Escreva a idade do nadador: ")
+		leia(a)
+
+		se(a<=10){
+			R=A
 		}
-	
-		r=a*b
-		
-		escreva("Foram feitas ",a," cópias, o valor total deu ",r," reais.")
-		
+		se(a<=17 e a>10){
+			R=B
+		}
+		se(a<=21 e a>17){
+			R=C
+		}
+		se(a<=60 e a>21){
+			R=D
+		}
+		se(a>60){
+			R=E
+		}
+				
+		escreva(R)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 208; 
+ * @POSICAO-CURSOR = 130; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
