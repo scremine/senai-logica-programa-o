@@ -9,27 +9,33 @@ programa
 	funcao inicio()
 	{
 		 
-		cadeia sol="Solteiro",cas="Casado",div="Divorciado",viu="Viúvo"
-		caracter x="0"
+		cadeia x
 		
 		escreva("Escolha uma das seguintes letras: (s, c, d ou v)\n")
 		escreva("Escreva: ")
-		leia(x)
-
-		
+		leia (x)
 
 		// definindo a resposta
-		se(x="s" ou x="S"){			
-		}
-		se(b<a e b<c){
-			A=b
-		}
-		se(c<a e c<b){
-			A=c
+		se (x == "s" ou x == "S")
+		{
+			escreva("Estado civil: Solteiro(a)")
 		}
 
-				
-		escreva("Os números em ordem crescente são: \n1º: ",A," 2º ",B," e 3º ",C)
+		senao se (x == "c" ou x == "C")
+		{
+			escreva("Estado civil: Casado(a)")
+		}
+
+		senao se (x == "d" ou x == "D")
+		{
+			escreva("Estado civil: Divorciado(a)")
+		}
+
+		senao se (x == "v" ou x == "V")
+		{
+			escreva("Estado civil: Viúvo(a)")
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -37,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 479; 
+ * @POSICAO-CURSOR = 644; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
