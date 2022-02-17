@@ -16,7 +16,7 @@ programa
 		"Digite de quantas em quantas horas o alarme 1 dispara: ")
 		leia (x)
 		
-		escreva("\nDigite de quantos em quantos minutos o alarme 1 dispara: ")
+		escreva("\nDigite de quantos em quantos minutos o alarme 2 dispara: ")
 		leia (y)
 		enquanto (y>60)
 		{
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 774; 
+ * @POSICAO-CURSOR = 608; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
