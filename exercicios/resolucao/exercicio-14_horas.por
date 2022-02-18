@@ -26,9 +26,9 @@ programa
 			enquanto (cont<=maximo)
 			{
 				contx = x * cont
-				contx = cont + 1
+				conty = cont + 1
 				contay = 1.0
-				
+				escreva("contx ",contx," conty ",conty," cont ",cont,"\n") //teste de mesa
 				enquanto (conty<=maximo)
 				{
 					conty = contay*y
@@ -39,7 +39,7 @@ programa
 						 pare
 					}
 					senao
-					conty++
+					contay++
 				}
 				cont++
 			}
@@ -47,7 +47,6 @@ programa
 		senao
 		escreva("Os valores são iguais.")
 	}
-
 }
 
 
@@ -62,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1033; 
+ * @POSICAO-CURSOR = 318; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
