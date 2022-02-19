@@ -10,17 +10,20 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro cont = 1, contn = 3 
+		inteiro cont = 1, contn = 3, n
 		real h=0.0, soma=0.0, soman = 0.0, k = 0.0
+
+		escreva("Determine o número até qual o algoritimo ira efetuar uma série de operações.\nDigite o número: ")
+		leia (n)
 		
-		enquanto (cont<=20)
+		enquanto (cont<=n)
 		{
 			h = (1/(mat.potencia(cont,3.0)))
 			cont = cont + 4
 			soma = h + soma
 			
 		}
-		enquanto (contn<=20)
+		enquanto (contn<=n)
 		{
 			k = (1/(mat.potencia(contn,3.0)))
 			contn = contn + 4
@@ -35,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 15; 
+ * @POSICAO-CURSOR = 444; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
