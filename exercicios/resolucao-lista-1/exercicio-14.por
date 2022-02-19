@@ -15,10 +15,20 @@ programa
 		escreva("Descubra quão o tempo mínimo necessário para que os dois alarmes disparem simultaneamente.\n\n",
 		"Digite de quantas em quantas horas o alarme 1 dispara: ")
 		leia (x)
-		
+			enquanto(x<=0)
+			{
+				escreva("Valor inválido!\nDigite novamente: ")
+				leia (x)
+			}
 		escreva("\nDigite de quantos em quantos horas o alarme 2 dispara: ")
 		leia (y)
+			enquanto(y<=0 ou y>60)
+			{
+			escreva("Erro, o máximo declarado pode ser somente 60 em 60 minutos.\nDigite novamente: ")
+			leia (y)
+			}
 
+		y=y/60	//transformando o valor de (y) em mi1nutos !! preciso arrumar
 
 		se (x!=y)
 		{
@@ -26,9 +36,9 @@ programa
 			enquanto (cont<=maximo)
 			{
 				contx = x * cont
-				contx = cont + 1
+				conty = cont + 1
 				contay = 1.0
-				
+				//escreva("contx ",contx," conty ",conty," cont ",cont,"\n") //teste de mesa
 				enquanto (conty<=maximo)
 				{
 					conty = contay*y
@@ -39,7 +49,7 @@ programa
 						 pare
 					}
 					senao
-					conty++
+					contay++
 				}
 				cont++
 			}
@@ -47,7 +57,6 @@ programa
 		senao
 		escreva("Os valores são iguais.")
 	}
-
 }
 
 
@@ -62,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1033; 
+ * @POSICAO-CURSOR = 994; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
