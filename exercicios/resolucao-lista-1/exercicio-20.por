@@ -6,14 +6,14 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n, r = 1 , contador = 2, numero = 0, nSoma=0
+		inteiro n, r = 1 , contador = 2, numero = 0, nSoma=0, logica = 0, i=1
 		
 		escreva("\nDigite um número primo, o programa irá somar todos os primos anteriores.\nDigite um número primo: ")
 		leia (n)
 
-		enquanto(n>0)
+		para (i=0 ; i<n ; i++)
 		{
-			enquanto(contador<n)
+			enquanto (contador<n)
 			{
 				se (n % contador == 0)
 				{
@@ -22,31 +22,25 @@ programa
 						numero++
 						contador++
 						escreva("O ",n," não é um número primo!")
-					}
-					senao
-					{
-						numero++
-						contador++
-					}
-				}
-				senao
-				{
-					contador++
-				}		
-			
+						logica = 0
+					}		
 				}
 			se (numero == 0) //é primo
 			{
-				nSoma = n + nSoma
-				escreva ("\n",n,"\n")
+				logica = 1
 			}
-		escreva (n)
-		n --
+			se (logica == 1)
+			{
+			nSoma = nSoma + n 
+			}
+			
+			n=n-1
 		}
-	
+		
 	escreva("A soma entre os primos é: ",nSoma)
 	
 	}
+}
 }
 
 
@@ -55,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 134; 
+ * @POSICAO-CURSOR = 784; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
